@@ -1,0 +1,39 @@
+.education{
+    padding-top: 0;
+}
+.education-list{
+    @extend %list;
+    display: flex;
+}
+.education-list__item{
+    position: relative;
+}
+.education-list__item img{
+    
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+.education-list__item:not(:last-child){
+    margin-right: 30px;
+}
+.education-list__label{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: rgba(47,48, 58, 0.8);
+    color: $prymary-white-color;
+    font-weight: 700;
+    line-height: 1.21;
+    text-transform: uppercase;
+}
+.education__title{
+    @extend %section-title;
+    margin-bottom: 50px;
+}
