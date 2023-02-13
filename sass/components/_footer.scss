@@ -4,30 +4,42 @@ footer{
     background-color: $secondary-bg-color;
 }
 .footer-items{
-    display: flex;
-    align-items: baseline;
-    justify-content: space-between;
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: baseline;
+        justify-content: space-evenly;
+    } 
+    @media screen and (min-width: 1200px) {
+        
+        flex-wrap: nowrap;
+        
+        justify-content: space-between;
+    } 
 }
 .footer-addres{
-    margin-right: 70px;
+    text-align: center;
+    margin-bottom: 60px;
 }
 footer .logo{
     display: block;
-    margin-bottom: 20px;
+    margin-bottom: 28px;
     color: $prymary-white-color;
+    
 }
 .footer-address__text{
-    margin-bottom: 9px;
+    margin-bottom: 12px;
     color: $prymary-white-color;
     font-weight: 400;
     line-height: 1.71;
     font-style: normal;
+    
 }
 .address-list{
     @extend %list;
 }
 .address-list__item:not(:last-child){
-    margin-bottom: 9px;
+    margin-bottom: 12px;
 }
 .address-list__link{
     color: $secondary-white-color;
@@ -37,7 +49,8 @@ footer .logo{
     font-style: normal;
 }
 .footer-social{
-    margin-right: 93px;
+   text-align: center;
+   margin-bottom: 60px;
 }
 .footer-social__text,
 .footer-subscript__text{
@@ -53,6 +66,9 @@ footer .logo{
     @extend %list;
     display: flex;
     justify-content: space-between;
+    width: 210px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .footer-social__item{
     display: flex;
@@ -82,11 +98,13 @@ footer .logo{
 .footer-social__svg{
     fill: currentColor;
 }
+.subscript{
+    text-align: center;}
 .form-subscript{
-    display: flex;
+    
 }
 .form-subscript__input{
-    width: 358px;
+    width: 100%;
     height: 50px;
     padding-left: 15px;
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -97,6 +115,13 @@ footer .logo{
     font-weight: 400;
     font-size: 16px;
     line-height: 1.25;
+    margin-bottom: 20px;
+    @media screen and (min-width: 768px) {
+        width: 450px;
+    }
+    @media screen and (min-width: 1200px){
+        width: 358px;
+    }
 }
 .form-subscript__button{
     display: flex;
@@ -104,7 +129,8 @@ footer .logo{
     justify-content: center;
     width: 200px;
     height: 50px;
-    margin-left: 12px;
+    margin-left: auto;
+    margin-right: auto;
     background-color: $accent-color;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border: $accent-color;
@@ -116,6 +142,6 @@ footer .logo{
     cursor: pointer;
 }
 .form-subscript__svg{
-    margin-left: 10px;
+    margin-left: 12px;
     fill: currentColor;
 }

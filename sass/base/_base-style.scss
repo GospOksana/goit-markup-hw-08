@@ -4,6 +4,10 @@ body{
     font-family: $primary-font-family;
     font-size: 14px;
     letter-spacing: 0.03em;
+    @media  (min-width: 480px) {
+        overflow-x: hidden;
+    }
+    
 }
 /* Утиліти */
 h1,
@@ -16,14 +20,25 @@ p{
     margin: 0;
 }
 .section{
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .container{
-    width: 1200px;
+    // width: 480px;
     padding: 0 15px;
     margin-left: auto;
     margin-right: auto;
     
+}
+.logo{
+    color: $prymary-color-text;
+    font-family: $secondary-font-family;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    text-decoration: none;
+}
+.logo > span{
+    color: $accent-color;
 }
