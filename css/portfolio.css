@@ -634,6 +634,20 @@ footer .logo {
 .subscript {
   text-align: center;
 }
+@media screen and (min-width: 1200px) {
+  .subscript {
+    width: 570px;
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .form-subscript {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
 
 .form-subscript__input {
   width: 100%;
@@ -685,6 +699,12 @@ footer .logo {
   font-size: 16px;
   line-height: 1.88;
   cursor: pointer;
+}
+@media screen and (min-width: 1200px) {
+  .form-subscript__button {
+    margin-left: 12px;
+    margin-right: 0;
+  }
 }
 
 .form-subscript__svg {
