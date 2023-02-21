@@ -646,6 +646,8 @@ header {
     margin-left: auto;
     margin-right: auto;
   }
+}
+@media screen and (max-width: 767px) {
   .team-list__item:not(:last-child) {
     margin-bottom: 30px;
   }
